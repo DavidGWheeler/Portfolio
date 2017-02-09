@@ -6,3 +6,7 @@ function Project(name, screenshot, description, link) {
   this.description = description;
   this.link = link;
 }
+
+document.getElementsByClassName('icon-menu').addEventListener('click' function(){
+  
+});
