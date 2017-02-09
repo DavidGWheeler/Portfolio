@@ -1,8 +1,72 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 56.25em;
+  margin: 0 auto;
+  padding: 0 0em;
+  box-sizing: border-box;
+}
+
 @media only screen and (min-width: 640px) {
 /*todo: add rules for larger screens here*/
 .icon-menu {visibility: hidden;}
-  }
+.menu {visibility: visible;}
+}
 
 .icon-menu {
   float: right;
+}
+
+menu {
+  visibility: hidden;
+}
+
+
+.container3 {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+	background-color: #dddddd;
+}
+
+.container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:33.33%;
+	background-color: #aaaaaa;
+}
+
+.container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:33.33%;
+	background-color: #adadad;
+}
+
+.col-one {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:68.67%;
+	overflow:hidden;
+}
+
+.col-two {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:72.67%;
+	overflow:hidden;
+}
+
+.col-three {
+	float:left;
+	width:29.33%;
+	position:relative;
+	left:76.67%;
+	overflow:hidden;
 }
