@@ -1,8 +1,10 @@
 'use strict';
 
-function Project(name, screenshot, description, link) {
-  this.name = name;
-  this.screenshot = screenshot;
-  this.description = description;
-  this.link = link;
+function Project(opts) {
+  this.name = opts.name;
+  this.screenshot = opts.screenshot;
+  this.imgAlt = opts.imgAlt;
+  this.description = opts.description;
+  this.link = opts.link;
+  this.body = opts.body;
 }
