@@ -1,11 +1,10 @@
-/*copied from icomoon/starter code*/
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?r6xhto');
-  src:  url('fonts/icomoon.eot?r6xhto#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?r6xhto') format('truetype'),
-    url('fonts/icomoon.woff?r6xhto') format('woff'),
-    url('fonts/icomoon.svg?r6xhto#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?1qqhyh');
+  src:  url('fonts/icomoon.eot?1qqhyh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1qqhyh') format('truetype'),
+    url('fonts/icomoon.woff?1qqhyh') format('woff'),
+    url('fonts/icomoon.svg?1qqhyh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,31 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon* {
-  cursor: pointer;
+.icon-home3:before {
+  content: "\e902";
 }
-
 .icon-menu:before {
-  cursor: pointer;
   content: "\e9bd";
 }
+.icon-info:before {
+  content: "\ea0c";
+}
 .icon-twitter:before {
-  /*cursor: pointer;*/
   content: "\ea96";
 }
 .icon-github:before {
-  /*cursor: pointer;*/
   content: "\eab0";
 }
 .icon-linkedin:before {
-  /*cursor: pointer;*/
   content: "\eac9";
 }
 .icon-git:before {
-  /*cursor: pointer;*/
   content: "\eae7";
 }
 .icon-codepen:before {
-  /*cursor: pointer;*/
   content: "\eae8";
 }

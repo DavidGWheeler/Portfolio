@@ -3,82 +3,92 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/8e1dbe9a20/UntitledProject/style-svg.css">
     <link rel="stylesheet" href="/vendor/style/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/icons.css">
-    <link rel="stylesheet" href="/css/sizes.css">
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="/css/modules.css">
-    <!-- <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200"> -->
+    <link rel="stylesheet" href="/vendor/icons.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/sizes.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/modules.css">
     <title>David Wheeler's Portfolio Blog</title>
   </head>
-  <body class="wrapper">
-    <span class="icon-menu size-40"></span>
-      <div class="main-nav size-32">
-        <span><a target="_blank" class="icon-twitter" href="https://twitter.com/dewi_Bachgen"></a></span>
-        <span><a target="_blank" class="icon-codepen" href="http://codepen.io/DGWheeler/"></a></span>
-        <span><a target="_blank" class="icon-github" href="https://github.com/DavidGWheeler"></a></span>
-        <span><a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/david-wheeler-0088361/"></a></span>
-      <!-- TODO: use this for links to repositories
-      <span><a target="_blank" class="icon-git" href="#"></a></span> -->
-    </div>
 
+    <body class="wrapper clearfix">
+      <nav class="main-nav">
+        <span class="icon-menu size-40"></span>
+        <ul>
+          <li class="tab" data-content="articles"><a href="#" class="icon-home3"> Home</a></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-info"> About</a></li>
+          <li><a target="_blank" class="icon-github" href="https://github.com/DavidGWheeler">GitHub</a></li>
+          <li><a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/david-wheeler-0088361/">LinkedIn</a></li>
+          <li><a target="_blank" class="icon-codepen" href="http://codepen.io/DGWheeler/">CodePen</a></li>
+          <li><a target="_blank" class="icon-twitter" href="https://twitter.com/dewi_Bachgen">Twitter</a></li>
+        </ul>
+      </nav>
 
-    <section class="bio">
-      <img src="img/me.png" alt="Picture of David Wheeler">
-      <aside class="bio-blurb">
-        <p>David Wheeler is an experienced <strong>Software Test Engineer</strong></p>
-      </aside>
+      <section class="bio">
+        <img src="img/me.png" alt="Picture of David Wheeler">
+        <aside class="bio-blurb">
+          <p>David Wheeler is an experienced <strong>Software Test Engineer</strong></p>
+        </aside>
+      </section>
+
+      <section class="work">
+      <h1>Work Experience</h1>
+      <ul>
+        <li>Amazon</li>
+        <li>Microsoft</li>
+        <li>TMobile</li>
+        <li>Nintendo</li>
+        <li>Humongous Enter</li>
+      </ul>
     </section>
 
-    <section class="work">
-    <h1>Work Experience</h1>
-    <ul>
-      <li>Amazon</li>
-      <li>Microsoft</li>
-      <li>TMobile</li>
-      <li>Nintendo</li>
-      <li>Humongous Enter</li>
-    </ul>
-  </section>
-
-    <section id="projects">
-      <article class="template" data-category="cat">
-        <header>
-          <h1>Project example</h1>
+      <section id="projects">
+        <article class="template" data-category="cat">
+          <header>
+            <h1>Project example</h1>
+          </header>
+            <img class="screenshot" src="" alt="">
+            <section class="article-body"></section>
+        </article>
+        <div class="byline">
+          Repo: <address><a target="_blank" class="icon-git" href="#">Repo Name</a></address>
           <!-- snagged from starter code of lab 02 -->
-            <div class="byline">
-              Repo: <address><a target="_blank" class="icon-git" href="#">Repo Name</a></address>
-              Last Update: <time pubdate datetime="2000-01-01">Publish Time</time>
-            </div>
+          Last Update: <time pubdate datetime="2000-01-01">Publish Time</time>
           <!-- snagged from starter code of lab 02 -->
-        </header>
-      </article>
-    </section>
+        </div>
+      </section>
 
-    <div class="container1">
-      <div class="container2">
-        <div class="container3">
+      <div class="container1">
+        <div class="container2">
+          <div class="container3">
 
-          <section class="col-one">
-            <h2>Title1</h2>
-            <p>Ipsum crapsum</p>
-          </section>
+            <section class="col-one">
+              <h2>Title1</h2>
+              <p>Ipsum crapsum</p>
+            </section>
 
-          <section class="col-two">
-            <h2>Title2</h2>
-            <p>Ipsum crapsum</p>
-          </section>
+            <section class="col-two">
+              <h2>Title2</h2>
+              <p>Ipsum crapsum</p>
+            </section>
 
-          <section class="col-three">
-            <h2>Title3</h2>
-            <p>Ipsum crapsum</p>
-          </section>
+            <section class="col-three">
+              <h2>Title3</h2>
+              <p>Ipsum crapsum</p>
+            </section>
 
+          </div>
         </div>
       </div>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+    </body>
+  <footer>
+    <p>footer stuff here</p>
+  </footer>
 </html>
