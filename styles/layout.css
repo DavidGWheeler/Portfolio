@@ -7,25 +7,6 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 641px) {
-
-}
-
-@media only screen and (min-width: 640px) {
-/*todo: add rules for larger screens here*/
-.icon-menu {visibility: hidden;}
-.menu {visibility: visible;}
-}
-
-.icon-menu {
-  float: right;
-}
-
-.menu {
-  visibility: hidden;
-}
-
-
 .container3 {
 	clear:left;
 	float:left;
