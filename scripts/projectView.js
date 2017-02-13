@@ -12,8 +12,6 @@ projectView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
-
-
 $(document).ready(function(){
   projectView.handleMainNav();
 });
