@@ -17,23 +17,23 @@
       <nav class="main-nav">
         <span class="icon-menu"></span>
         <ul>
-          <li class="tab" data-content="articles"><a href="#" class="icon-home3"> Home</a></li>
-          <li class="tab" data-content="about"><a href="#" class="icon-info"> About</a></li>
-          <li><a target="_blank" class="icon-github" href="https://github.com/DavidGWheeler">GitHub</a></li>
           <li><a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/david-wheeler-0088361/">LinkedIn</a></li>
-          <li><a target="_blank" class="icon-codepen" href="http://codepen.io/DGWheeler/">CodePen</a></li>
           <li><a target="_blank" class="icon-twitter" href="https://twitter.com/dewi_Bachgen">Twitter</a></li>
+          <li><a target="_blank" class="icon-codepen" href="http://codepen.io/DGWheeler/">CodePen</a></li>
+          <li><a target="_blank" class="icon-github" href="https://github.com/DavidGWheeler">GitHub</a></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-info"> About</a></li>
+          <li class="tab" data-content="projects"><a href="#" class="icon-home3"> Home</a></li>
         </ul>
       </nav>
 
-      <section class="bio">
+      <section id="about" data-content="about" class="tab-content">
         <img class="myself" src="img/me.png" alt="Picture of David Wheeler">
         <aside class="bio-blurb">
           <p>David Wheeler is an experienced <strong>Software Test Engineer</strong></p>
         </aside>
       </section>
 
-      <section class="work">
+      <section id="work" data-content="work" class=tab-content">
       <h1>Work Experience</h1>
       <ul>
         <li>Amazon</li>
@@ -45,7 +45,7 @@
       </ul>
     </section>
 
-      <section id="projects">
+      <section id="projects" data-content="projects"  class="tab-content">
         <article class="template" data-category="category-here">
           <header>
             <h1 class="title">Project example</h1>
@@ -96,6 +96,7 @@
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
           <script src="scripts/blogProjects.js"></script>
+          <script src="scripts/projectView.js"></script>
         <script src="scripts/project.js"></script>
     </body>
 </html>
