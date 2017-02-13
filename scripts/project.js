@@ -6,7 +6,7 @@ console.log(allProjects);
 function Project(opts) {
   this.title = opts.title;
   this.category = opts.category;
-  this.projectName = opts.name;
+  this.projectName = opts.projectName;
   this.screenshot = opts.screenshot;
   this.imgAlt = opts.imgAlt;
   this.projectUrl = opts.projectUrl;
@@ -19,10 +19,10 @@ Project.prototype.toHtml = function() {
   $newProject.attr('data-category', this.category);
   $newProject.find('.title').text(this.title);
   $newProject.find('.byline a').text(this.projectName);
-  $newProject.find('.byline a').attr('url', this.projectUrl)
+  $newProject.find('.byline a').attr('href', this.projectUrl)
   $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
   $newProject.find('time[pubdate]').attr('title', this.publishedOn);
-  $newProject.find('img.screenshot', this.screenshot).attr('url', this.screenshot);
+  $newProject.find('img.screenshot', this.screenshot).attr('src', this.screenshot);
   $newProject.find('img.screenshot').attr('alt', this.imgAlt);
   $newProject.find('.project-body').html(this.body);
   // snagged from starter code

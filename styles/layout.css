@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+.tab-content {
+  margin-top: 3em;
+}
+
 .container3 {
 	clear:left;
 	float:left;

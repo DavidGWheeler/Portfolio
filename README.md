@@ -11,4 +11,6 @@ User Stories:
 7. As a visitor, I want the primary nav to be responsive, so that I can get around using any device.
 
 Attributions:
-Referenced this site for an example of the three column layout I wanted for a three column portion of my page: http://matthewjamestaylor.com/blog/equal-height-columns-3-column.htm
+- Referenced this site for an example of the three column layout I wanted for a three column portion of my page: http://matthewjamestaylor.com/blog/equal-height-columns-3-column.htm
+
+- Time stamp and a few css styles were copied from lab starter code (where noted with comments).
