@@ -30,11 +30,11 @@ var projectData = [
     category:    'All',
     title:       'About Me',
 
-    projectName:        'Bus Mall, 201 class project',
+    projectName:        'About Me, 201 class project',
     projectUrl:  'https://davidgwheeler.github.io/AboutMe/',
     publishedOn: '2017-01-22',
 
-    screenshot:  'img/BusMall.png',
+    screenshot:  'img/AboutMe.png',
     imgAlt:      'Preview of: Bus Mall',
     body:        '<p>This is the first project I turned in.  I am putting it out here on display, to show how far I have come, in such a short time!  It is all HTML with some verry minor vanilla JS. I may go back, eventually, and touch this one up, to be used as a personal site to show-case more skills as I learn.  I may also just use it to remind myself of what I didn\'t know.</p>',
   },
