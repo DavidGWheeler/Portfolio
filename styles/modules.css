@@ -10,7 +10,8 @@
 }
 
 .main-nav {
-  padding: 0.1em;
+  padding: 0.01em;
+  float: right;
 }
 
 .main-nav ul {
@@ -69,6 +70,10 @@
 
   .main-nav ul li:hover a {
     color: #29506D;
+  }
+
+  .main-nav ul li {
+    float: right;
   }
 
 }
