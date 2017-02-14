@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/8e1dbe9a20/UntitledProject/style-svg.css">
     <link rel="stylesheet" href="/vendor/style/normalize.css">
     <link rel="stylesheet" href="/vendor/icons.css">
     <link rel="stylesheet" href="/styles/style.css">
@@ -11,6 +10,23 @@
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/modules.css">
     <title>David Wheeler's Portfolio Blog</title>
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="clearfix" data-category="{{category}}">
+        <header>
+          <h1>{{title}}</h1>
+            <div class="byline">
+               <address><a target="_blank" class="icon-git" href="{{projectUrl}}">{{projectName}}</a></address>
+               <!-- snagged from starter code of lab 05 -->
+               {{publishStatus}}
+               <!-- snagged from starter code of lab 05 -->
+            </div>
+        </header>
+          <img class="screenshot" src="{{screenshot}}" alt="{{imgAlt}}">
+            <section class="project-body left-justify">{{{body}}}</section>
+      </article>
+    </script>
+
   </head>
 
     <body class="wrapper clearfix">
@@ -43,60 +59,43 @@
       </section>
 
 
-
       <section id="projects" data-content="projects"  class="tab-content">
-        <article class="template" data-category="category-here">
-          <header>
-            <h1 class="title">Project example</h1>
-              <div class="byline">
-                <!-- snagged from starter code of lab 02 -->
-                 <address><a target="_blank" class="icon-git" href="#"></a></address><time pubdate datetime="2000-01-01"></time>
-              </div>
-              <!-- snagged from starter code of lab 02 -->
-          </header>
-
-          <img class="screenshot" src="" alt="">
-
-          <section class="project-body"></section>
-
-        </article>
-
+        <!-- projects will appear here -->
       </section>
 
-      <div class="container1">
-        <div class="container2">
-          <div class="container3">
-
-            <section class="col-one">
-              <h2>Title1</h2>
-              <p>Ipsum crapsum</p>
-            </section>
-
-            <section class="col-two">
-              <h2>Title2</h2>
-              <p>Ipsum crapsum</p>
-            </section>
-
-            <section class="col-three">
-              <h2>Title3</h2>
-              <p>Ipsum crapsum</p>
-            </section>
-
-          </div>
-        </div>
+      <div class="container3">
+      	<div class="container2">
+      		<div class="container1">
+      			<div class="col1">
+      				<!-- Column one start -->
+      			  <h2>Title 1</h2>
+      				<p>ipsum Crapsu,</p>
+      				<!-- Column one end -->
+      			</div>
+      			<div class="col2">
+      				<!-- Column two start -->
+      				<h2>Title 2</h2>
+      				<p>ipsum Crapsum.</p>
+      				<!-- Column two end -->
+      			</div>
+      			<div class="col3">
+      				<!-- Column three start -->
+      				<h2>Title 3</h2>
+              <p>ipsum Crapsum</p>
+      				<!-- Column three end -->
+      			</div>
+      		</div>
+      	</div>
       </div>
 
       <footer>
         <Copyright (c) 2017 DavidGWheeler No Rights Reserved.>
         </footer>
 
-        <script
-          src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-          <script src="scripts/blogProjects.js"></script>
-          <script src="scripts/projectView.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+        <script src="scripts/blogProjects.js"></script>
+        <script src="scripts/projectView.js"></script>
         <script src="scripts/project.js"></script>
     </body>
 </html>
