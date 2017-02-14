@@ -16,7 +16,7 @@
 	float:left;
 	width:100%;
 	overflow:hidden;
-	background-color: #dddddd;
+	background-color: #aaaaaa;
 }
 
 .container2 {
@@ -25,7 +25,7 @@
 	width:100%;
 	position:relative;
 	right:33.33%;
-	background-color: #aaaaaa;
+	background-color: #dddddd;
 }
 
 .container1 {
