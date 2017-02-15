@@ -1,8 +1,5 @@
 'use strict';
 
-var allProjects = [];
-console.log(allProjects);
-
 function Project(opts) {
   this.title = opts.title;
   this.category = opts.category;
@@ -14,31 +11,40 @@ function Project(opts) {
   this.publishedOn = opts.publishedOn;
 }
 
+Project.all = [];
+
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone().removeClass('template');
-  $newProject.attr('data-category', this.category);
-  $newProject.find('.title').text(this.title);
-  $newProject.find('.byline a').text(this.projectName);
-  $newProject.find('.byline a').attr('href', this.projectUrl)
-  $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
-  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
-  $newProject.find('img.screenshot', this.screenshot).attr('src', this.screenshot);
-  $newProject.find('img.screenshot').attr('alt', this.imgAlt);
-  $newProject.find('.project-body').html(this.body);
-  // snagged from starter code
-  $newProject.find('time').text('Last update: ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-  // snagged from starter code
-  return $newProject;
+  let template = Handlebars.compile($('#project-template').text());
+// snagged from starter code lab-05
+  this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
+  this.publishStatus = this.publishedOn ? `Last updated: ${this.daysAgo} days ago` : '(draft)';
+  return template(this)
+// snagged from starter code lab-05
 };
 
-projectData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
+Project.loadAll = function(projectData){
+  projectData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  });
 
-projectData.forEach(function(ele) {
-  allProjects.push(new Project(ele));
-});
+  projectData.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  })
+}
 
-allProjects.forEach(function(a) {
-  $('#projects').append(a.toHtml());
-});
+Project.fetchAll = function() {
+  if (localStorage.projectData) {
+    console.log('localStorage');
+    Project.loadAll(JSON.parse(localStorage.projectData));
+    projectView.initIndexPage();
+  } else {
+    $.getJSON('./data/blogProjects.json')
+    .then(function(projectData) {
+      Project.loadAll(projectData);
+      localStorage.projectData = JSON.stringify(projectData);
+      projectView.initIndexPage();
+    }, function(err) {
+      console.log(err);
+    });
+  }
+}

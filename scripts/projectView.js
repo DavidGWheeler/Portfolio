@@ -1,6 +1,6 @@
 'use strict';
 
-var projectView = {};
+const projectView = {};
 
 
 projectView.handleMainNav = function() {
@@ -12,8 +12,16 @@ projectView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
+// $('#projects').append(projects.toHtml());
 
-
-$(document).ready(function(){
-  projectView.handleMainNav();
+$('pre code').each(function(i, block) {
+  hljs.highlightBlock(block);
 });
+
+projectView.initIndexPage = function() {
+  Project.all.forEach(function(a){
+    $('#projects').append(a.toHtml())
+  });
+
+  projectView.handleMainNav();
+};

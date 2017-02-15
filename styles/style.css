@@ -23,12 +23,8 @@ h1 {
   box-shadow: 0 1px #ddd, 0 2px #fff, 0 3px #ddd;
 }
 
-small {
-  font-size: .66666667em;
-}
-
 a {
-  color: #e74c3c;
+  color: #c53c1c;
   text-decoration: none;
 }
 
