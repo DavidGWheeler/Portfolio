@@ -11,7 +11,7 @@ function Project(opts) {
   this.publishedOn = opts.publishedOn;
 }
 
-Article.all = [];
+Project.all = [];
 
 Project.prototype.toHtml = function() {
   let template = Handlebars.compile($('#project-template').text());
@@ -28,16 +28,17 @@ Project.loadAll = function(projectData){
   });
 
   projectData.forEach(function(ele) {
-    allProjects.push(new Project(ele));
+    Project.all.push(new Project(ele));
   })
 }
 
 Project.fetchAll = function() {
   if (localStorage.projectData) {
+    console.log('localStorage');
     Project.loadAll(JSON.parse(localStorage.projectData));
     projectView.initIndexPage();
   } else {
-    $.getJSON('/data/blogProjects.json')
+    $.getJSON('./data/blogProjects.json')
     .then(function(projectData) {
       Project.loadAll(projectData);
       localStorage.projectData = JSON.stringify(projectData);

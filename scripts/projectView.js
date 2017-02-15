@@ -12,13 +12,13 @@ projectView.handleMainNav = function() {
   $('.main-nav .tab:first').click();
 };
 
-$('#projects').append(project.toHtml());
+// $('#projects').append(projects.toHtml());
 
 $('pre code').each(function(i, block) {
   hljs.highlightBlock(block);
 });
 
-articleView.initIndexPage = function() {
+projectView.initIndexPage = function() {
   Project.all.forEach(function(a){
     $('#projects').append(a.toHtml())
   });
