@@ -11,32 +11,32 @@
   margin-top: 3em;
 }
 
-.container3 {
+#container3 {
 	clear:left;
 	float:left;
 	width:100%;
 	overflow:hidden;
-	background-color: #aaaaaa;
+	background-color: #B2A292;
 }
 
-.container2 {
+#container2 {
 	clear:left;
 	float:left;
 	width:100%;
 	position:relative;
 	right:33.33%;
-	background-color: #dddddd;
+	background-color: #CCBDAE;
 }
 
-.container1 {
-	ch:left;
+#container1 {
+	float:left;
 	width:100%;
 	position:relative;
 	right:33.33%;
-	background-color: #adadad;
+	background-color: #EBE3FF;
 }
 
-.col-one {
+#col-one {
 	float:left;
 	width:29.33%;
 	position:relative;
@@ -44,7 +44,7 @@
 	overflow:hidden;
 }
 
-.col-two {
+#col-two {
 	float:left;
 	width:29.33%;
 	position:relative;
@@ -52,7 +52,7 @@
 	overflow:hidden;
 }
 
-.col-three {
+#col-three {
 	float:left;
 	width:29.33%;
 	position:relative;

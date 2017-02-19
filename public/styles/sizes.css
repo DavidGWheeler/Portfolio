@@ -17,6 +17,10 @@ h1 {
   width: 43%
 }
 
+.quarter-width {
+  width: 24%
+}
+
 
 header, main, footer {
   max-width: 56.250em;
