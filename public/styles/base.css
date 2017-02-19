@@ -1,40 +1,31 @@
-/*icomoon snippet*/
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-/*icomoon snippet*/
 body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  color: #555;
-  background: #fff;
+  color: #9EB29D;
+  background: #FFFFFF;
 }
 h1 {
   font-size: 1.5em;
   font-weight: normal;
-  box-shadow: 0 1px #ddd, 0 2px #fff, 0 3px #ddd;
+  box-shadow: 0 1px #DBD6FF, 0 2px #FAFFF9, 0 3px #DBD6FF;
+}
+
+h2 {
+  font-family: 'Satisfy', cursive;
 }
 
 a {
-  color: #c53c1c;
+  color: #C0A089;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  box-shadow: 0 1px #e74c3c;
+  box-shadow: 0 1px #C0A089;
 }
 
-.bshadow0, input {
-  box-shadow: inset 0 -2px #e7e7e7;
-}
 
 input:hover {
   box-shadow: inset 0 -2px #ccc;
@@ -54,15 +45,23 @@ input {
   padding: .25em 0;
 }
 
+aside {
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
 
 input:focus {
   outline: none;
   box-shadow: inset 0 -2px #449fdb;
 }
 
-
+li {
+  font-family: 'Roboto', sans-serif;
+  color: #111111
+}
 
 p {
+  font-family: 'Roboto', sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
 }

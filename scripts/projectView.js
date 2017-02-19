@@ -2,14 +2,13 @@
 
 const projectView = {};
 
-  // projectView.handleSubNav = function() {
-  //   $('.sub-nav').on('hover', '.col', function() {
-  //     $('.col').css({display: "block"});
-  //   });
-  // $('#' + $(this).data('num')).fadeIn();
-  // $('.col').toggleClass('full-width');
-//   $('sub-nav .col:first').click();
-// };
+projectView.handleSubNav = function() {
+  $('.sub-nav').on('click', '.col', function() {
+    $('#' + $(this).data('content')).toggleClass('full-width');
+  });
+
+  $('.sub-nav .tab:first').click();
+};
 
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function() {
@@ -25,7 +24,7 @@ $('pre code').each(function(i, block) {
 });
 
 projectView.initIndexPage = function() {
-  Project.all.forEach(function(a){
+  Project.all.forEach(function(a) {
     $('#projects').append(a.toHtml())
   });
 
