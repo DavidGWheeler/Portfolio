@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="/styles/modules.css">
     <title>David Wheeler's Portfolio Blog</title>
 
+    <script id="content-template" type="text/x-handlebars-template">
+      <article class="clearfix col-content" data-category="{{category}}">
+        <h2>{{title2}}</h2>
+        {{{body2}}}
+      </article>
+    </script>
+
     <script id="project-template" type="text/x-handlebars-template">
       <article class="clearfix" data-category="{{category}}">
         <header>
