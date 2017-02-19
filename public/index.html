@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Headland+One|Roboto|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/style/normalize.css">
+    <link rel="stylesheet" href="/vendor/icons.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/sizes.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/modules.css">
+    <title>David Wheeler's Portfolio Blog</title>
+
+    <script id="content-template" type="text/x-handlebars-template">
+      <article class="clearfix col-content" data-category="{{category}}">
+        <h2>{{title2}}</h2>
+        {{{body2}}}
+      </article>
+    </script>
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="clearfix" data-category="{{category}}">
+        <header>
+          <h1>{{title}}</h1>
+            <div class="byline">
+               <address><a target="_blank" class="icon-git" href="{{projectUrl}}">{{projectName}}</a></address>
+               <!-- snagged from starter code of lab 05 -->
+               {{publishStatus}}
+               <!-- snagged from starter code of lab 05 -->
+            </div>
+        </header>
+          <img class="screenshot" src="{{screenshot}}" alt="{{imgAlt}}">
+            <section class="project-body left-justify">{{{body}}}</section>
+      </article>
+    </script>
+
+  </head>
+
+    <body class="wrapper clearfix">
+      <nav class="main-nav full-width">
+        <span class="icon-menu"></span>
+        <ul>
+          <li class="tab sub-nav" data-content="about"><a href="#" class="icon-info">About</a>
+            <ul id="sub-nav" class="size-9">
+              <li class="col" data-content="hobbies"><a href="#">Hobbies</li>
+              <li class="col" data-content="goals"><a href="#">Goals</li>
+              <li class="col" dat-content="skills"><a href="#">Skills</li>
+            </ul>
+          </li>
+          <li><a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/david-wheeler-0088361/">LinkedIn</a></li>
+          <li><a target="_blank" class="icon-twitter" href="https://twitter.com/dewi_Bachgen">Twitter</a></li>
+          <li><a target="_blank" class="icon-codepen" href="http://codepen.io/DGWheeler/">CodePen</a></li>
+          <li><a target="_blank" class="icon-github" href="https://github.com/DavidGWheeler">GitHub</a></li>
+          <li class="tab" data-content="projects"><a href="#" class="icon-home3">Home</a></li>
+        </ul>
+      </nav>
+
+      <section id="about" data-content="about" class="tab-content">
+        <img class="myself" src="img/me.png" alt="Picture of David Wheeler">
+          <aside class="bio-blurb clearfix">
+            <p>David Wheeler is an experienced <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<strong>Software Test Engineer</strong></p>
+          </aside>
+            <h2 class="size-32">Work Experience</h2>
+              <ul>
+                <li>Amazon</li>
+                <li>Microsoft</li>
+                <li>TMobile</li>
+                <li>Nintendo</li>
+                <li>Humongous Entertainment</li>
+                <li>etc...</li>
+              </ul>
+      </section>
+
+
+      <section id="projects" data-content="projects"  class="tab-content">
+        <!-- projects will appear here -->
+      </section>
+
+      <div id="container3">
+      	<div id="container2">
+      		<div id="container1">
+      			<div id="col-one">
+              <article id="hobbies" class="col-content">
+        				<h2>Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </article>
+      			</div>
+      			<div id="col-two">
+              <article id="goals" class="col-content">
+        				<h2>Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </article>
+      			</div>
+      			<div id="col-three">
+      				<article id="certs" class="col-content">
+        				<h2>Title 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </article>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+      <footer>
+        <Copyright (c) 2017 DavidGWheeler No Rights Reserved.>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+        <script src="scripts/projectView.js"></script>
+        <script src="scripts/project.js"></script>
+        <script>
+          Project.fetchAll();
+        </script>
+    </body>
+</html>
