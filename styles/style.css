@@ -1,0 +1,58 @@
+/*icomoon snippet*/
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+/*icomoon snippet*/
+
+.bshadow0, input {
+  box-shadow: inset 0 -2px #e7e7e7;
+}
+
+.myself {
+  max-width: 33%;
+  border: inset;
+  border-width: thick;
+  border-radius: 3%;
+}
+
+.screenshot {
+  max-width: 33%;
+  height: auto;
+}
+
+.glyph {
+  font-size: 16px;
+  margin-right: 1.5em;
+  float: left;
+  width: 17em;
+}
+
+.liga {
+  width: 80%;
+  width: calc(100% - 2.5em);
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.footer {
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+.footer p {
+	margin-left:2%;
+	padding-right:2%;
+}
