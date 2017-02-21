@@ -8,9 +8,6 @@
   fill: currentColor;
 }
 /*icomoon snippet*/
-.main-nav {
-  float: right;
-}
 
 .icon-menu {
   font-size: 3em;
@@ -167,11 +164,11 @@
 
 .bio-blurb p {
   justify-content: center;
-  margin-left: 5em;
+  margin-left: 1em;
 }
 
 .bio-blurb li {
-  margin: 0em 0em 0em 5em;
+  margin-left: 5em;
 }
 
 .bio-blurb h2 {
@@ -182,11 +179,15 @@
 .sub-nav:hover ul li {
   display: list-item;
   border-bottom: none;
-  align-items: flex-start;
+  align-content: space-around;
 }
 
 .sub-nav ul li {
   display: none;
+}
+
+.col {
+  display: inline-block;
 }
 
 .col-content h2 {
@@ -202,7 +203,17 @@
 
 .col-content aside {
   font-family: 'Headland One', serif;
-  color: #89B28D
+  color: #1A111A
   float: left;
   clear: right;
+}
+
+.draft p {
+  font-family: 'Headland One', serif;
+  font-variant: small-caps;
+  color: #1A111A
+}
+
+.work-exp ul li {
+  content: open-quote;
 }
