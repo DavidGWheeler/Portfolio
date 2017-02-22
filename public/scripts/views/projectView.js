@@ -11,16 +11,26 @@
     $('.sub-nav .tab:first').click();
   };
 
-  projectView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab', function() {
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).fadeIn();
+// TODO: remove after testing controllers.
+  // projectView.handleMainNav = function() {
+  //   $('.main-nav').on('click', '.tab', function() {
+  //     $('.tab-content').hide();
+  //     $('#' + $(this).data('content')).fadeIn();
+  //   });
+  //
+  //   $('.main-nav .tab:first').click();
+  // };
+
+  // columnTeaser
+  projectView.columnTeaser = function() {
+    $('.col-body *:nth-of-type(n+2)').hide();
+
+    $('#projects').on('click', 'a.read-on', function(e){
+      e.preventDefault();
+      $(this).parent().find('*').fadeIn();
+      $(this).hide();
     });
-
-    $('.main-nav .tab:first').click();
   };
-
-  // TODO: columnTeaser
 
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
@@ -31,7 +41,10 @@
       $('#projects').append(a.toHtml())
     });
 
-    projectView.handleMainNav();
+    // projectView.handleMainNav();
+    projectView.columnTeaser();
   };
+
+  Project.fetchAll(projectView.initIndexPage);
   module.projectView = projectView;
 })(window);
