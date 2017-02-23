@@ -4,8 +4,10 @@
   const aboutController = {};
 
   aboutController.index = () => {
-    $('#about').show();
-
+    $('#about')
+    .show()
+    .siblings()
+    .hide();
   };
 
   module.aboutController = aboutController;
