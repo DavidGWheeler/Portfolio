@@ -50,5 +50,5 @@
     }
   };
 
-  module.Article = Project;
+  module.Project = Project;
 })(window);

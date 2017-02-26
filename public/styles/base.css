@@ -7,7 +7,9 @@ body {
   color: #9EB29D;
   background: #FFFFFF;
 }
+
 h1 {
+  font-family: 'Satisfy', cursive;
   font-size: 1.5em;
   font-weight: normal;
   box-shadow: 0 1px #DBD6FF, 0 2px #FAFFF9, 0 3px #DBD6FF;
