@@ -33,17 +33,17 @@
     })
   }
 
-  Project.fetchAll = function() {
+  Project.fetchAll = callback => {
     if (localStorage.projectData) {
       console.log('localStorage');
       Project.loadAll(JSON.parse(localStorage.projectData));
-      projectView.initIndexPage();
+      callback();
     } else {
       $.getJSON('./data/blogProjects.json')
       .then(function(projectData) {
         Project.loadAll(projectData);
         localStorage.projectData = JSON.stringify(projectData);
-        projectView.initIndexPage();
+        callback();
       }, function(err) {
         console.log(err);
       });
