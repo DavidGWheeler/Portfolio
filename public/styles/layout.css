@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+.nav-group {
+  float: right;
+}
+
 .tab-content {
   margin-top: 3em;
 }

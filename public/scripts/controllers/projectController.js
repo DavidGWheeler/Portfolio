@@ -2,8 +2,9 @@
 
 (function(module){
   const projectController = {};
+
   projectController.index = () => {
-    Project.fetchAll(articleView.initIndexPage);
+    Project.fetchAll(projectView.initIndexPage);
 
     $('.tab-content').hide();
     $('#projects').fadeIn();

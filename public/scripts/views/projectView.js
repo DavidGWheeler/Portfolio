@@ -3,35 +3,22 @@
 (function(module) {
   const projectView = {};
 
-  projectView.handleSubNav = function() {
-    $('.sub-nav').on('click', '.col', function() {
-      $('#' + $(this).data('content')).toggleClass('full-width');
-    });
-
-    $('.sub-nav .tab:first').click();
-  };
-
   // columnTeaser
-  projectView.columnTeaser = function() {
+  projectView.columnTeaser = () => {
     $('.col-body *:nth-of-type(n+2)').hide();
 
-    $('#projects').on('click', 'a.read-on', function(e){
-      e.preventDefault();
+    $('#projects').on('click', 'a.read-on', function(event){
+      event.preventDefault();
       $(this).parent().find('*').fadeIn();
       $(this).hide();
     });
   };
 
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-  });
-
-  projectView.initIndexPage = function() {
-    Project.all.forEach(function(a) {
-      $('#projects').append(a.toHtml())
+  projectView.initIndexPage = () => {
+    Project.all.forEach(a => {
+      $('#projects').append(a.toHtml('#project-template'));
     });
 
-    // projectView.handleMainNav();
     projectView.columnTeaser();
   };
 
