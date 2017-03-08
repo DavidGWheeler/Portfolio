@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+.screenshot {
+  position: relative;
+  left: 25%;
+}
+
 .nav-group {
   float: right;
 }
