@@ -28,9 +28,10 @@
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
+    Project.all = [];
     projectData.forEach( ele => {
       Project.all.push(new Project(ele));
-    })
+    });
   }
 
   Project.fetchAll = callback => {
