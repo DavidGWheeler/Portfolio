@@ -4,18 +4,22 @@
   const aboutView = {};
 
   const ui = () => {
-    let $about - $('#about');
+    let $aboutMe = $('#aboutMe');
 
-    $about.find('ul').empty();
-    $about.show().siblings().hide();
+    $aboutMe
+    .find('ul')
+    .empty();
+
+    $aboutMe
+    .show()
+    .siblings()
+    .hide();
   };
 
   aboutView.index = () => {
     ui();
-    $('#about ul').append(
-      repos.with('name'.map(render)
-    );
-  };
+    $('#aboutMe ul').fadeIn();
+  }
 
   module.aboutView = aboutView;
 })(window);

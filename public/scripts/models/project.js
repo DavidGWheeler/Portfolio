@@ -40,7 +40,7 @@
       callback();
     } else {
       $.getJSON('./data/blogProjects.json')
-      .then(function(projectData) {
+      .then( projectData => {
         Project.loadAll(projectData);
         localStorage.projectData = JSON.stringify(projectData);
         callback();
