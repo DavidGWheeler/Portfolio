@@ -54,14 +54,22 @@
   text-decoration: none;
 }
 
+ul.nav-group {
+  font-size: 2em;
+  width: 100vw;
+  height: 0.5vh;
+}
+
 /*start mobile first layout*/
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 755px) {
+
   .icon-menu {
     display: none;
   }
 
   .main-nav {
-    padding: 0.1em 6.1em .1em 1em;;
+    padding: 0.1em 6.1em .1em 1em;
+    height: 15vh;
   }
 
   .main-nav ul {
@@ -83,10 +91,11 @@
 
   .sub-nav {
     padding: .01em .05em;
-    height: 3em;
+    height: 9em;
+    width: 8.4em;
   }
 
-  .sub-nav ul li {
+  ul.sub-nav {
     display: none;
   }
 
@@ -102,10 +111,10 @@
 /*end mobile first layout*/
 
 .myself {
-  max-width: 33%;
+  max-width: 50%;
   border: inset;
   border-width: thick;
-  border-radius: 3%;
+  border-radius: 5%;
 }
 
 .screenshot {

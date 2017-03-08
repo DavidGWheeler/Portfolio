@@ -13,7 +13,7 @@
   aboutView.index = () => {
     ui();
     $('#about ul').append
-  };
+  }
 
   module.aboutView = aboutView;
 })(window);
