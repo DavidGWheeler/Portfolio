@@ -4,10 +4,19 @@
   const aboutController = {};
 
   aboutController.index = () => {
-    $('#about')
-    .show()
+    $('#aboutMe')
+    .fadeIn()
     .siblings()
     .hide();
+  };
+
+  aboutController.hobbies = () => {
+    $('main section').hide();
+    $('#col-one')
+    .show()
+    .siblings()
+    .hide()
+    .addClass('full-width');
   };
 
   module.aboutController = aboutController;
