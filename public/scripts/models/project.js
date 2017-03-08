@@ -28,7 +28,7 @@
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
-    projectData.forEach(function(ele) {
+    projectData.forEach( ele => {
       Project.all.push(new Project(ele));
     })
   }
