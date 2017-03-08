@@ -55,9 +55,9 @@
 }
 
 ul.nav-group {
-  font-size: 2em;
-  width: 100vw;
+  width: 20vw;
   height: 0.5vh;
+  float: right;
 }
 
 /*start mobile first layout*/
@@ -67,7 +67,14 @@ ul.nav-group {
     display: none;
   }
 
+  ul.nav-group {
+    width: 100vw;
+    height: 1.5vh;
+    font-size: 1.5em;
+  }
+
   .main-nav {
+    font-size: 1em;
     padding: 0.1em 6.1em .1em 1em;
     height: 15vh;
   }
