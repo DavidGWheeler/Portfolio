@@ -34,7 +34,7 @@
         <span class="icon-menu"></span>
         <ul class="nav-group">
           <li class="tab sub-nav" data-content="about"><a href="#" class="icon-info">About David</a>
-            <ul id="sub-nav" class="size-9">
+            <ul id="sub-nav" class="dropdown size-9">
               <li class="col" data-content="hobbies"><a href="#">Hobbies</li>
               <li class="col" data-content="goals"><a href="#">Goals</li>
               <li class="col" dat-content="skills"><a href="#">Skills</li>
@@ -69,33 +69,33 @@
         <!-- projects will appear here -->
       </section>
 
-      <div id="container3">
-      	<div id="container2">
-      		<div id="container1">
-      			<div id="col-one">
+      <section id="container3">
+      	<section id="container2">
+      		<section id="container1">
+      			<section id="col-one">
               <article id="hobbies" class="col-content">
         				<h2>Title 1</h2>
                 <p class="col-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <a href="#" class="read-on">Read on &rarr;</a>
               </article>
-      			</div>
-      			<div id="col-two">
+      			</section>
+      			<section id="col-two">
               <article id="goals" class="col-content">
         				<h2>Title 2</h2>
                 <p class="col-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <a href="#" class="read-on">Read on &rarr;</a>
               </article>
-      			</div>
-      			<div id="col-three">
+      			</section>
+      			<section id="col-three">
       				<article id="certs" class="col-content">
         				<h2>Title 3</h2>
                 <p class="col-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <a href="#" class="read-on">Read on &rarr;</a>
               </article>
-      			</div>
-      		</div>
-      	</div>
-      </div>
+      			</section>
+      		</section>
+      	</section>
+      </section>
 
       <footer>
         <Copyright (c) 2017 DavidGWheeler No Rights Reserved.>
@@ -106,7 +106,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
 
         <script src="/scripts/models/project.js"></script>
+
         <script src="/scripts/views/projectView.js"></script>
+
         <script src="/scripts/controllers/projectController.js"></script>
         <script src="/scripts/controllers/aboutController.js"></script>
         <script src="/scripts/controllers/routes.js"></script>

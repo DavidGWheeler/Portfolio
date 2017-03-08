@@ -4,7 +4,7 @@
   const aboutView = {};
 
   const ui = () => {
-    let $about - $('#about');
+    let $about = $('#about');
 
     $about.find('ul').empty();
     $about.show().siblings().hide();
@@ -12,9 +12,7 @@
 
   aboutView.index = () => {
     ui();
-    $('#about ul').append(
-      repos.with('name'.map(render)
-    );
+    $('#about ul').append
   };
 
   module.aboutView = aboutView;

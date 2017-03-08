@@ -6,7 +6,7 @@
   projectController.index = () => {
     Project.fetchAll(projectView.initIndexPage);
 
-    $('.tab-content').hide();
+    $('main section').hide();
     $('#projects').fadeIn();
   };
 
