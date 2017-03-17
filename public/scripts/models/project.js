@@ -14,7 +14,7 @@
 
   Project.all = [];
 
-  Project.prototype.toHtml = function() {
+  Project.prototype.toHtml = () => {
     let template = Handlebars.compile($('#project-template').text());
 // snagged from starter code lab-05
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
@@ -23,7 +23,7 @@
 // snagged from starter code lab-05
   };
 
-  Project.loadAll = function(projectData){
+  Project.loadAll = projectData => {
     projectData.sort(function(a,b) {
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
